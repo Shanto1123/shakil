@@ -4,9 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shkail website</title>
+    <title>HTML Form</title>
+    <style>
+        body{
+            background-color: rgb(120, 140, 98);
+        }
+        lebel{
+            font-size:25px;
+            color:khaki
+        }
+        div{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            color:rgb(222, 30, 75);
+            font-family: fantasy;
+            font-size:55px;
+        }
+    </style>
 </head>
 <body>
-    <h1>shakil ahmed</h1>
+    <header>
+        <h1>Sign up for a new account</h1>
+    </header>
+    <form>
+    <div>
+        <lebel for="fullname">Full Name:  </lebel>
+        <input type="text" name="fullname" id="fullname" placeholder="Enter your Full name" required>
+    </div>
+    <br/>
+    <div>
+        <lebel for="password">Password:</lebel>
+        <input type="password" name="password" id="password" placeholder="Enter a valid password" required>
+    </div><br/>
+    <div>
+        <lebel for="email">Email:</lebel>
+        <input type="email" name="email" id="email">
+    </div><br/>
+    <div>
+        <lebel for="phone">Phone No:</lebel>
+        <input type="number" name="number" id="number">
+    </div><br/>
+    <div>
+        <lebel for="date-of-birht">Date Of Birth</lebel>
+        <input type="date" name="date-of-birth" id="date-of-birth">
+    </div><br/>
+    <div>
+        <lebel for="fmonth">Favourite Month:</lebel>
+        <input type="month" name="fmonth" id="fmonth">
+    </div><br/>
+    <div>
+        <lebel for="randomnumber">Select a Random Number from 1 to 5:</lebel>
+        <input type="number" name="randomnumber" id="randomnumber" min="1" max="5" placeholder="0">
+    </div><br/>
+    <div>
+        <lebel for="image">Select your image:</lebel>
+        <input type="image" name="image" id="image">
+    </div><br/>
+    <div>
+        <lebel for="file">Select a file:</lebel><br/>
+        <input type="file" name="file" id="file">
+    </div><br/>
+    <div>
+        <lebel for="color">Select your Favourite Color:</lebel>
+        <input type="color" name="color" id="color">
+    </div><br/>
+    <div>
+        <lebel for="website">Paste Your Website's Url Here:</lebel>
+        <input type="url" name="website" id="website">
+    </div><br/>
+    <div>
+        
+       <lebel for="gender">Gender:</lebel>
+        <input name="gender" type="radio" name="male" id="male" value="male">Male
+        <input name="gender"  type="radio" name="female" id="male" value="female">Female
+        <input name="gender" type="radio" name="other" id="other" value="other">Other
+
+    </div><br/>
+    <div>
+        <lebel for="religion">Religion:</lebel>
+        <input type="checkbox" name="islam" id="islam">Islam
+        <input  type="checkbox" name="hind" id="hidu">Hindu
+        <input  type="checkbox" name="other" id="other">Other
+    </div>
+    <div>
+        <lebel for="dpt">Department</lebel>
+        <select>
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="bba">BBA</option>
+            <option value="eee">EEE</option>
+        </select>
+    </div><br/>
+    <div>
+     <lebel for="sms">Massage:</lebel><br/>
+     <textarea name="sms" id="sms" cols="30" rows="10" placeholder="Enter some massage for me,suggest me some information"></textarea>
+    </div>
+    <div>
+        <button type="submit">Save data</button>
+        <button type="reset">Reset All</button>
+    </div>
+
+    
+</form>
 </body>
 </html>
